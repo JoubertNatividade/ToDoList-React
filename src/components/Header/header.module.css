@@ -1,0 +1,51 @@
+.header {
+    background: var(--gray-700);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 12.5rem;
+    position: relative;
+}
+
+.formTask {
+    position: absolute;
+    height: 3.375rem;
+    bottom: calc(-3.375rem / 2);
+    width: 100%;
+    max-width: 46rem;
+    display: flex;
+    gap: 0.5rem;
+    padding: 0 1rem;
+}
+
+.formTask input {
+    flex: 1;
+    height: 100%;
+    color: var(--gray-100);
+    background: var(--gray-500);
+    border: 1px solid var(--gray-500);
+    border-radius: 8px;
+    padding: 0 1rem;
+    font-size: 1rem;
+}
+
+.formTask button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 1rem;
+    border: none;
+    border-radius: 8px;
+    height: 100%;
+    background: var(--blue-dark);
+    color: var(--gray-100);
+
+    gap: 0.5rem;
+    font-weight: 700;
+    font-size: 0.875rem;
+}
+
+.formTask input::placeholder {
+    color: var(--gray-300);
+}
